@@ -18,7 +18,7 @@ return {
         -- Enable bold keywords.
         bold_keywords = false,
         -- Enable italic comments.
-        italic_comments = true,
+        italic_comments = false,
         -- Enable editor background transparency.
         transparent = {
           -- Enable transparent background.
@@ -35,7 +35,7 @@ return {
         -- Cursorline options.  Also includes visual/selection.
         cursorline = {
           -- Bold font in cursorline.
-          bold = false,
+          bold = true,
           -- Bold cursorline number.
           bold_number = true,
           -- Available styles: 'dark', 'light'.
@@ -61,6 +61,14 @@ return {
         },
       }
       -- require('nordic').load()
+    end,
+  },
+  {
+    'shaunsingh/nord.nvim',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.g.nord_italic = true
     end,
   },
 }
