@@ -68,5 +68,9 @@ return {
     vim.keymap.set('i', '<A-c>', function()
       require('neocodeium').clear()
     end)
+    vim.keymap.set('n', '<Leader>tc', function()
+      vim.cmd 'NeoCodeium toggle_buffer'
+      vim.notify('NeoCodeium: toggled buffer.', vim.log.levels.INFO)
+    end, { desc = 'NeoCodeium: [T]oggle [C]urrent buffer' })
   end,
 }
