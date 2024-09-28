@@ -7,14 +7,6 @@ return {
   config = function()
     require('codeium').setup {
       enable_chat = true,
-      enabled_filetypes = {
-        'python',
-        'javascript',
-        'typescript',
-        'lua',
-        'rust',
-        'go',
-      },
     }
   end,
 }
