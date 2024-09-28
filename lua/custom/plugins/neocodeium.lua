@@ -48,7 +48,8 @@ return {
       -- List of directories and files to detect workspace root directory for Codeium chat
       root_dir = { '.bzr', '.git', '.hg', '.svn', '_FOSSIL_', 'package.json' },
     }
-    vim.keymap.set('i', '<A-f>', function()
+    -- vim.keymap.set('i', '<A-f>', function()
+    vim.keymap.set('i', '<A-CR>', function()
       require('neocodeium').accept()
     end)
     vim.keymap.set('i', '<A-w>', function()
@@ -57,7 +58,8 @@ return {
     vim.keymap.set('i', '<A-a>', function()
       require('neocodeium').accept_line()
     end)
-    vim.keymap.set('i', '<A-e>', function()
+    -- vim.keymap.set('i', '<A-e>', function()
+    vim.keymap.set('i', '<A-Tab>', function()
       require('neocodeium').cycle_or_complete()
     end)
     vim.keymap.set('i', '<A-r>', function()
