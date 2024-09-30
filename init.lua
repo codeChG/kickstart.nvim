@@ -160,6 +160,9 @@ vim.opt.scrolloff = 10
 -- My own options
 require 'custom.cg-options'
 
+-- My own keymaps
+require 'custom.cg-keymaps'
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
@@ -707,6 +710,7 @@ require('lazy').setup({
         --
         -- You can use 'stop_after_first' to run the first available formatter from the list
         javascript = { 'prettierd', 'prettier', stop_after_first = true },
+        typescript = { 'prettierd', 'prettier', stop_after_first = true },
         html = { 'prettierd', 'prettier', stop_after_first = true },
         c = { 'clang-format' },
       },
